@@ -1,0 +1,152 @@
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+// Home page styles
+.hero-section {
+  position: relative;
+  width: 100%;
+  height: 350px;
+  overflow: hidden;
+  margin-bottom: 2rem;
+}
+
+.hero-bg {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: brightness(0.7);
+}
+
+.hero-text {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  text-shadow: 0 4px 12px rgba(0, 0, 0, 0.35);
+}
+
+.hero-text h1 {
+  font-size: 2.8rem;
+  margin: 0;
+}
+
+.hero-text h2 {
+  font-size: 1.4rem;
+  margin: 0.7rem 0 0 0;
+  font-weight: 400;
+}
+
+// About page styles
+.about_container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.minusta-img {
+  width: 220px;
+  border-radius: 7px;
+  object-fit: cover;
+  box-shadow: 0 2px 20px rgba(0, 0, 0, 0.09);
+}
+
+@media (max-width: 700px) {
+  .minusta-content {
+    flex-direction: column;
+    align-items: center;
+  }
+  .minusta-img {
+    width: 90vw;
+  }
+}
+
+// Hinnasto page styles
+.hinnasto-img-wrap {
+  position: relative;
+  width: 100%;
+  margin: 2rem auto;
+}
+
+.hinnasto-img {
+  width: 100%;
+  border-radius: 7px;
+  object-fit: cover;
+}
+
+.img-text {
+  position: absolute;
+  top: 24px;
+  left: 0;
+  width: 100%;
+  color: #fff;
+  font-size: 1.5rem;
+  text-align: center;
+  text-shadow: 0 2px 16px rgba(0, 0, 0, 0.4);
+  font-weight: bold;
+  pointer-events: none;
+}
+
+// Contact page styles
+.contact-wrap {
+  display: flex;
+  gap: 2rem;
+  margin: 2rem auto;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+.contact-wrap > div {
+  flex: 1;
+  min-width: 260px;
+}
+
+.contactform label {
+  display: block;
+  margin-bottom: 0.2rem;
+  font-weight: 500;
+}
+
+.input,
+.contactform textarea {
+  width: 100%;
+  margin-bottom: 1rem;
+  padding: 0.5rem;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.formbtn {
+  background: #18477b;
+  color: #fff;
+  border: none;
+  padding: 0.7rem 1.5rem;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1.1rem;
+  margin-top: 0.3rem;
+}
+
+.formbtn:hover {
+  background: #2761b0;
+}
+
+.form-success {
+  color: #1c7c1c;
+  margin-top: 1rem;
+}
+
+.form-error {
+  color: #b21c1c;
+  margin-top: 1rem;
+}
